@@ -11,16 +11,16 @@ public class UnitOfMeasure {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
-	private String uom;
+	private String decription;
 
 	public UnitOfMeasure() {
 		super();
 	}
 
-	public UnitOfMeasure(Long id, String uom) {
+	public UnitOfMeasure(Long id, String decription) {
 		super();
 		this.id = id;
-		this.uom = uom;
+		this.decription = decription;
 	}
 
 	/**
@@ -38,17 +38,17 @@ public class UnitOfMeasure {
 	}
 
 	/**
-	 * @return the uom
+	 * @return the decription
 	 */
-	public String getUom() {
-		return uom;
+	public String getDecription() {
+		return decription;
 	}
 
 	/**
-	 * @param uom the uom to set
+	 * @param decription the decription to set
 	 */
-	public void setUom(String uom) {
-		this.uom = uom;
+	public void setDecription(String decription) {
+		this.decription = decription;
 	}
 
 }
